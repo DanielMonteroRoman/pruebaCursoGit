@@ -1,10 +1,33 @@
 @charset "utf-8";
 /*css Document*/
 
+/*ESTA ES LA MANERA DE AÑADIR COMENTARIOS EN CSS*/
 
+@font-face {
+	font-family: 'MiPropiaFuenteCombo';
+	src: url(Combo-Regular.ttf);
+}
 
 #cabeceraweb{
-	background-color:purple;
+	/*background-color: mediumpurple;*/
+	text-align: center;
+	margin: 15px auto;
+	padding: 15px;
+	border: 3PX solid;
+	border-radius: 15px;
+	box-shadow: #999 15px;
+	border-radius: 20px;
+	transform:scale(0.75);
+	background: linear-gradient(to bottom, rgb(48, 15, 199),rgb(181, 162, 233))
+	
+}
+
+#principal:hover{
+	background-color: aliceblue;
+}
+
+#titulo{
+	font: bold 36px 'MiPropiaFuenteCombo';
 }
 
 #navegacionprincipal{
@@ -12,13 +35,27 @@
 }
 
 #barralateral{
-	background-color:green
+	background-color:green;
+	float: left; /*se escora hacia la izquierda adaptándose al contenido que tiene*/
+	height: 1350px; /*establece un alto determinado para barra lateral*/
 }
 
 #contenedorprincipal{
-	background-color:grey
+	background-color:grey;
+	margin-left: 205px; /*proporciona un margen vacío hacia la izquierda SIN TENER EN CUENTA LOS ELEMENTOS FLOAT como es el caso de la barra lateral*/
+	padding-left: 15px;
+	padding-top: 15px;
 }
 
 #piedepagina{
-	background-color:yellow
+	background-color:yellow;
+	clear: both;
+	margin-top: 20px; /*poner un margen por la parte de arriba SIN TENER EN CUENTA LOS ELEMENTOS FOLOAT como es el caso de la barra lateral*/
 }
+
+li{
+	background-color: crimson;
+	display: inline; /*pone todos los elementos en una sola línea*/
+}
+
+
